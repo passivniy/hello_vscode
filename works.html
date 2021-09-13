@@ -6,7 +6,7 @@
 
 <head>
 	<!-- ДЕЛАЮ СПЕЦИАЛЬНО ДЛЯ ЭТОГО САЙТА (СКОПИРОВАЛ У ЖЕНИ) -->
-	<title>HomePage</title>
+	<title>Works</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/style.css" />
@@ -47,66 +47,27 @@
 <!-- shift+alt+t - перевод языков -->
 
 <body>
-	<header class="header">
-		<div class="header__content">
-			<div class="header__menu menu">
-				<div class="menu__icon icon-menu">
-					<span></span>
-				</div>
-				<nav class="menu__body">
-					<ul class="menu__list">
-						<li><a href="" class="menu__link">Works</a></li>
-						<li><a href="" class="menu__link">Blog</a></li>
-						<li><a href="" class="menu__link">Contact</a></li>
-					</ul>
-				</nav>
+	<div class="wrapper">
+		<header class="header">
+	<div class="header__content">
+		<div class="header__menu menu">
+			<div class="menu__icon icon-menu">
+				<span></span>
 			</div>
+			<nav class="menu__body">
+				<ul class="menu__list">
+					<li><a href="works.html" class="menu__link">Works</a></li>
+					<li><a href="blog.html" class="menu__link">Blog</a></li>
+					<li><a href="" class="menu__link">Contact</a></li>
+				</ul>
+			</nav>
 		</div>
-	</header>
-	<main class="page">
-		<section class="hello">
-			<div class="hello__container container">
-				<div class="hello__content ">
-					<h1 class="hello__title title">Hi, I am Daniil,<br> Creative Technologist</h1>
-					<div class="hello__text text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-						Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
-					<a href="" class="hello__btn btn">Download Resume</a>
-				</div>
-				<img src="img/avatar.jpg" class="hello__avatar" alt="">
-			</div>
-		</section>
-		<section class="recent-posts">
-			<div class="recent-posts__container container">
-				<div class="recent-posts__header">
-					<div class="recent-posts__title title-posts">Recent posts</div>
-					<a href="" class="recent-posts__viewall">View all</a>
-				</div>
-				<div class="recent-posts__items">
-					<div class="recent-posts__column">
-						<article class="recent-posts__item recent-post">
-							<a href="" class="recent-post__title">Making a design system from scratch</a>
-							<div class="recent-post__info">12 Feb 2020 <span>|</span> Design, Pattern</div>
-							<div class="recent-post__text text">Amet minim mollit non deserunt ullamco est sit aliqua dolor
-								do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
-								nostrud amet.</div>
-						</article>
-					</div>
-					<div class="recent-posts__column">
-						<article class="recent-posts__item recent-post">
-							<a href="" class="recent-post__title">Creating pixel perfect icons in Figma</a>
-							<div class="recent-post__info">12 Feb 2020 <span>|</span> Design, Pattern</div>
-							<div class="recent-post__text text">Amet minim mollit non deserunt ullamco est sit aliqua dolor
-								do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
-								nostrud amet.</div>
-						</article>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="featured-works">
-			<div class="featured-works__container container">
-				<div class="featured-works__title title-posts">Featured works</div>
-				<div class="featured-works__items works">
+	</div>
+</header>
+		<main class="page">
+			<div class="works page__container container">
+				<h1 class="works__main-title title">Works</h1>
+				<div class="works__items">
 					<article class="works__item">
 						<a href="" class="works__image _ibg"><img src="img/works/work1.jpg" alt="Work #1"></a>
 						<div class="works__body">
@@ -152,23 +113,40 @@
 								amet.</div>
 						</div>
 					</article>
+					<article class="works__item">
+						<a href="" class="works__image _ibg"><img src="img/works/work4.jpg" alt="Work #4"></a>
+						<div class="works__body">
+							<a href="" class="works__title">Components</a>
+							<div class="works__info">
+								<div class="works__year">2018</div>
+								<div class="works__category">Components, Design</div>
+							</div>
+							<div class="works__text text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+								amet
+								sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+								nostrud
+								amet.</div>
+						</div>
+					</article>
 				</div>
 			</div>
-		</section>
+	</div>
+
 	</main>
 	<footer class="footer">
-		<div class="footer__content container">
-			<div class="footer__social social">
-				<a href="" class="social__item "><img src="img/icons/fsb.svg" alt=""></a>
-				<a href="" class="social__item "><img src="img/icons/insta.svg" alt=""></a>
-				<a href="" class="social__item "><img src="img/icons/Group.svg" alt=""></a>
-				<a href="" class="social__item "><img src="img/icons/Linkedin.svg" alt=""></a>
-			</div>
-			<div class="footer__copy">
-				Copyright ©2020 All rights reserved
-			</div>
+	<div class="footer__content container">
+		<div class="footer__social social">
+			<a href="" class="social__item "><img src="img/icons/fsb.svg" alt=""></a>
+			<a href="" class="social__item "><img src="img/icons/insta.svg" alt=""></a>
+			<a href="" class="social__item "><img src="img/icons/Group.svg" alt=""></a>
+			<a href="" class="social__item "><img src="img/icons/Linkedin.svg" alt=""></a>
 		</div>
-	</footer>
+		<div class="footer__copy">
+			Copyright ©2020 All rights reserved
+		</div>
+	</div>
+</footer>
+	</div>
 </body>
 
 </html>

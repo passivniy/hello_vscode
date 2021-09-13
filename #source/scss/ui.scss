@@ -1,0 +1,34 @@
+/*-------IBG Адаптивное изображение--------------------------------------*/
+._ibg{
+	position:relative;
+	img{
+		position:absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit:cover;
+	}
+}
+/*-------ОБЩИЕ КЛАССЫ----------------------------------------------------*/
+.title {
+	font-size: 44px;
+	font-weight: 700;
+	color:#21243d;
+	line-height: 60/44*100%;
+	@media(max-width:$md3+px){
+		font-size: 32px;
+	}
+}
+.text {
+	font-size: 16px;
+	line-height: 23/16*100%;
+	color: #21243D;
+}
+.title-posts{
+	font-size: 22px;
+	@media(max-width:$md3+px){
+		text-align:center;
+		font-size: 18px;
+	}
+}
