@@ -135,7 +135,7 @@ body {
   display: -ms-flexbox;
   display: flex; }
   .menu__list li {
-    padding: 0px 25px; }
+    padding: 0px 47.5px; }
     .menu__list li:nth-child(4) {
       padding: 0px 150px 0px 47.5px; }
     .menu__list li:nth-child(5) {
