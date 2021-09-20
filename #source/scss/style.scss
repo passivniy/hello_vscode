@@ -2,16 +2,30 @@
 
 // Подключение шрифтов.
 // &display=swap&subset=cyrillic-ext
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,700&display=swap);
+
+@font-face {
+	font-family: 'Banny Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Banny Round'), url('../../fonts/Banny-Round.woff') format('woff');
+	}
+@font-face {
+	font-family: 'Banny Bold';
+	font-style: normal;
+	font-weight: 700;
+	src: local(''), url('../../fonts/Banny-BoldRound.woff') format('woff');
+	}
+
 /* ------ШРИФТ-ПО-УМОЛЧАНИЮ--------------------------------------------------------- */
-$fontfamily:"Heebo";
+$fontfamily:"Open Sans";
 
 /* ------NULL-STYLE--------------------------------------------------------- */
 @import "nullstyle.scss";
 // <ПЕРЕМЕННЫЕ>
 $minwidth:320px;
-$mw:1152;
-$mwCnt:856;
+$mw:1440;
+$mwCnt:1300;
 $md1:$mwCnt+12;
 $md2:991.98;
 $md3:767.98;
@@ -24,7 +38,6 @@ header{
 
 /* --------------------------------------------------------------------- */
 body{
-	color:#21243D;
 	font-family: $fontfamily;
 	&.lock{
 		overflow:hidden;
@@ -32,14 +45,8 @@ body{
 }
 .container{
 	max-width: $mwCnt+px;
+	padding:0px 10px;
 	margin:0px auto;
-	@media(max-width:$md1+px){
-		max-width: 750px;
-	}
-	@media(max-width:$md2+px){
-		max-width: none;
-		padding:0px 10px;
-	}
 }
 .wrapper{
 	width: 100%;
@@ -56,227 +63,36 @@ body{
 /*--------IMPORT---------------------------------------------------------*/
 @import "ui.scss";
 @import "forms.scss";
-@import "works.scss";
 @import "footer.scss";
 @import "icons.scss";
-@import "blog.scss";
-@import "article.scss";
 /* -----page------------------------------------------------------------ */
-.page{
-	padding:90px 0px 0px 0px;
-	flex: 1 1 auto;
-	@media(max-width:$md3+px){
-		padding:30px 0px 0px 0px;
-	}
-}
-/* -----social---------------------------------------------------------- */
-.social {
-	display:flex;
-	justify-content: center;
-	align-items: center;
-	&__item {
-		padding:0px 35px 0px 0px;
-		&:last-child{
-			padding:0px 0px 0px 0px;
-		}
-	}
-}
-/*-----hello-------------------------------------------------------------*/
-.hello {
-	padding:38px 0px 70px 0px;
-	@media(max-width:$md1+px){
-		padding:0px 0px 70px 0px;
-	}
-	@media(max-width:$md3+px){
-		padding:0px 0px 60px 0px;
-	}
-	&__container {
-		display: flex;
-		@media(max-width:$md3+px){
-			text-align:center;
-			align-items: center;
-			flex-direction:column-reverse;
-		}
-	}
-
-	&__content {
-		align-items: flex-start;
-		padding:18px 110px 0px 0px;
-		flex: 1 1 auto;
-		*:last-child{
-			margin-bottom: 0px;
-		}
-		@media(max-width:$md1+px){
-			padding:18px 50px 0px 0px;
-		}
-		@media(max-width:$md3+px){
-			padding:0px 0px 0px 0px;
-		}
-		
-	}
-
-	&__title {
-		margin:0px 0px 25px 0px;
-		@media(max-width:$md3+px){
-			margin:0px 0px 20px 0px;
-		}
-	}
-
-	&__text {
-		margin:0px 0px 35px 0px;
-		@media(max-width:$md3+px){
-			padding:0px 15px;
-			margin:0px 0px 25px 0px;
-		}
-	}
-
-	&__btn {
-		margin:0px 0px 25px 0px;
-		@media(max-width:$md3+px){
-			margin:0px 0px 20px 0px;
-		}
-	}
-
-	&__avatar {
-		flex:0 0 243px;
-		width: 243px;
-		height: 243px;
-		border-radius: 50%;
-		overflow: hidden;
-		display:flex;
-		justify-content: center;
-		align-items: center;
-		box-shadow:-5px 13px 0px 0px #EDF7FA;
-		img{
-			min-width: 100%;
-		}
-		@media(max-width:$md3+px){
-			flex: 0 0 170px;
-			width: 170px;
-			margin:0px 0px 40px 0px;
-		}
-	}
-}
-/*-------recent-posts----------------------------------------------------*/
-.recent-posts {
-	background: #EDF7FA;
-	padding:25px 0px 13px 0px;
-	@media(max-width:$md3+px){
-		padding:25px 0px 23px 0px;
-	}
-	&__container {
-	}
-
-	&__header {
-		display:flex;
-	}
-
-	&__title {
-		flex:1 1 auto;
-		font-size: 22px;
-		padding:0px 0px 20px 0px;
-	}
-
-	&__viewall {
-		flex:0 0 auto;
-		font-size: 16px;
-		line-height: 23px;
-		color: #00A8CC;
-		@media(max-width:$md3+px){
-			display:none;
-		}
-	}
-
-	&__items {
-		margin:0px -10px;
-		@media(min-width:$md3+px){
-			display:flex;
-		}
-	}
-
-	&__column {
-		flex:0 1 50%;
-		padding:0px 10px;
-		margin:0px 0px 17px 0px;
-	}
-
-	&__item {
-	}
-}
-.recent-post {
+.page {
+	position: absolute;
+	width: 100%;
 	height: 100%;
-	background-color: #fff;
-	box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
-	border-radius: 4px;
-	padding:20px;
-	*:last-child{
-		margin-bottom: 0px;
-	}
-	@media(max-width:$md3+px){
-		padding:15px;
-	}
-	&__title {
-		display:inline-block;
-		font-weight: bold;
-		font-size: 26px;
-		line-height: 38/26*100%;
-		margin:0px 0px 17px 0px;
-		color: #21243D;
-		transition:color 0.3s ease 0s;
-		@media(min-width:$md2+px){
-			&:hover{
-				color:#FF6464;
-			}
-		}
-		@media(max-width:$md3+px){
-			font-size: 22px;
-			margin:0px 0px 10px 0px;
-		}
-	}
-
-	&__info {
-		margin:0px 0px 15px 0px;
-		font-size: 18px;
-		line-height: 26/18*100%;
-		span{
-			margin: 0px 10px;
-		}
-		@media(max-width:$md3+px){
-			font-size: 16px;
-			margin:0px 0px 10px 0px;
-		}
-	}
-
-	&__text {
-		margin:0px 0px 15px 0px;
-	}
+	top: 0;
+	left: 0;
+	display:flex;
+	flex-direction:column;
 }
-/*-----feature-works-----------------------------------------------------*/
-.featured-works {
-	padding:30px 0px 80px 0px;
-	@media(max-width:$md3+px){
-		padding:30px 0px 30px 0px;
-	}
-	&__container {
-	}
-
-	&__title{	
-		margin:0px 0px 15px 0px;
-	}
-	&__items{
-		@media(max-width:$md3+px){
-			display:flex;
-			overflow:auto;
-			.works__item{
-				flex: 0 0 90%;
-				margin:0px 15px 0px 0px;
-			}
+/* -----MAINSCREEN---------------------------------------------------------- */
+.main-screen {
+	flex:1 0 100%;
+	position:relative;
+		img{
+			position:absolute;
+			width:100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			object-fit: cover;
 		}
-	}
 }
 
-	
+/*-----block-------------------------------------------------------------*/
 
-/* ------FOOTER--------------------------------------------------------- */
+/*-------block----------------------------------------------------*/
+
+/* ------block--------------------------------------------------------- */
 
 
