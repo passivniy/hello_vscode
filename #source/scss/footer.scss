@@ -1,2 +1,14 @@
 .footer {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100px;
+	background-color:#000000;
+	opacity:0.8;
+	&__content {
+		font-size: 12px;
+		line-height: 12/12*100%;
+		color:#ffffff;
+	}
 }
+

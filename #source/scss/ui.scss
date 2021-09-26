@@ -12,23 +12,57 @@
 }*/
 /*-------ОБЩИЕ КЛАССЫ----------------------------------------------------*/
 .title {
-	font-size: 44px;
-	font-weight: 700;
-	color:#21243d;
-	line-height: 60/44*100%;
-	@media(max-width:$md3+px){
+	font-family: "Banny Bold";
+	font-size: 36px;
+	line-height: 48/36*100%;
+	text-transform: uppercase;
+	color: #000000;
+	text-align:center;
+	position:relative;
+	padding:0px 0px 14px 0px;
+	margin:0px 0px 14px 0px;
+	&:after{
+		content:'';
+		width: 60px;
+		height: 5px;
+		position:absolute;
+		left: 50%;
+		bottom: 0;
+		margin:0px 0px 0px -30px;
+		background-color: #E8C300;
+		border-radius: 50px;	
+		@media(max-width:$md3+px){
+			width: 45px;
+			height: 4px;
+			margin:0px 0px 0px -22.5px;
+		}
+	}
+	@media(max-width:$md2+px){
 		font-size: 32px;
+	}
+	@media(max-width:$md3+px){
+		font-size: 28px;
+		padding:0px 0px 10px 0px;
+		margin:0px 0px 10px 0px;
+	}
+}
+.subtitle{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 28/18*100%;
+	text-align: center;
+	padding:0px 0px 22px 0px;
+	@media(max-width:$md2+px){
+		font-size: 16px;
+		padding:0px 0px 16px 0px;
 	}
 }
 .text {
-	font-size: 16px;
-	line-height: 23/16*100%;
-	color: #21243D;
-}
-.title-posts{
-	font-size: 22px;
+	font-size: 18px;
+	line-height: 28/18*100%;
+	text-align: center;
 	@media(max-width:$md3+px){
-		text-align:center;
-		font-size: 18px;
+		font-size: 16px;
+		padding:0px 0px 5px 0px;
 	}
 }

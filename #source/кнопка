@@ -1,0 +1,10 @@
+<div class="contact__column">
+							<ul class="contact__other">
+								<li class="contact__place">5th London Boulevard, U.K.</li>
+								<li class="contact__number"> +40 729 131 637/+40 726 458 782</li>
+								<li class="contact__email">office@mindblister.com</li>
+							</ul>
+							<div class="contact__button">
+								<a href="" class="contact__link">Send Message</a>
+							</div>
+						</div>

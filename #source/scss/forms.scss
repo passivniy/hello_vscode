@@ -1,5 +1,5 @@
 //<BUTTONS>================================================
-.btn{
+/*.btn{
 	background-color: #ff6464;
 	border-radius: 2px;
 	height: 47px;
@@ -18,4 +18,130 @@
 			background-color: #bb4949;
 		}
 	}
+}*/
+
+//---------Кубик поверх фото---------------------------
+
+.photo-squere-l{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 275px;
+	min-height: 275px;
+	padding:0px 20px 0px 0px;
+	position:relative;
+	img{
+		object-fit:cover;
+		border-radius: 10px;
+		max-width:575px;
+		max-height:575px;
+		
+	}
+	@media(max-width:$md2+px){
+		min-width: 225px;
+		min-height: 225px;
+	}
+	@media(max-width:$md3+px){
+		padding:0px 0px 20px 0px;
+		min-width:150px;
+		min-height: 150px;
+	}
 }
+
+.photo-squere-l-cube{
+	position:absolute;
+		left: -80px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 200px;
+		height: 200px;
+		max-width:45%;
+		max-height: 50%;
+		border-radius:5px;
+		border:20px solid yellow;
+		@media(max-width:$md2+px){
+			border:10px solid yellow;
+			left:-35px;
+			max-width:32%;
+			max-height: 28%;
+		}
+		@media(max-width:900px){
+			left:-40px;
+			max-height:26%;
+			max-width: 34%;
+		}
+		@media(max-width:$md3+px){
+			border:15px solid yellow;
+			max-height: 35%;
+			left:-80px;
+		}
+		@media(max-width:650px){
+			max-height: 33%;
+			left:-65px;
+		}
+		@media(max-width:$md4+px){
+			border:10px solid yellow;
+			max-height:26%;
+			max-width:26%;
+			left:-43px;
+		}
+		@media(max-width:380px){
+			max-width:28%;
+			max-height:28%;
+			left:-38px;
+		}
+}
+
+//--------------Кубик справа---------------
+/*.photo-squere-r{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 300px;
+	min-height: 300px;
+	padding:0px 0px 0px 20px;
+	position:relative;
+	@media(max-width:$md2+px){
+		min-width: 275px;
+		min-height: 275px;
+	}
+	@media(max-width:$md3+px){
+		padding:0px 0px 0px 0px;
+	}
+	img{
+		max-width:475px;
+		max-height:475px ;
+		object-fit:cover;
+		border-radius: 10px;
+	}
+}
+
+.photo-squere-r-cube{
+	position:absolute;
+		right: -50px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 200px;
+		height: 200px;
+		max-width:50%;
+		max-height: 50%;
+		border-radius:5px;
+		border:20px solid yellow;
+		@media(max-width:$md2+px){
+			border:10px solid yellow;
+			right:-20px;
+			max-width:30%;
+			max-height: 30%;
+		}
+		@media(max-width:900px){
+			max-height:26%;
+		}
+		@media(max-width:$md3+px){
+			border:15px solid yellow;
+			max-height: 30%;
+		}
+		@media(max-width:$md4+px){
+			border:10px solid yellow;
+			max-height:30%;
+		}
+}*/
